@@ -1,17 +1,17 @@
-# Inventory-Optimization-Simulation
+# 🚐 Swirltubs: Stochastic Optimization & Resource Allocation
 
-## Project Overview
-This project focuses on the optimization of inventory stock levels to balance the costs of holding inventory against the risks of stockouts. By utilizing advanced simulation techniques and operations research principles, the project provides a robust framework for improving supply chain efficiency and reducing operational overhead.
+## 🎯 Executive Summary
+This project tackles a complex resource allocation and logistics challenge for Swirltubs, a company managing a network of 1,000 service technicians. The objective was to architect an optimal balance between holding costs and service delivery. Using predictive modeling and probability distributions, this project provides a data-driven strategy to maximize "fix-it-first" service rates while strictly controlling spatial and financial constraints.
 
-## Tech Stack & Tools
-- **Microsoft Excel**: The primary platform for data modeling and analysis.
-- **Monte Carlo Simulations**: Employed to model the uncertainty in demand and lead times, providing a probabilistic view of inventory performance.
-- **Operations Research (OR)**: Applied mathematical optimization techniques to determine the ideal reorder points and order quantities.
+## 🛠️ Methodology & Technical Execution
+* **Stochastic Optimization:** Applied the binomial distribution and **Monte Carlo simulations** to model real-world uncertainty in demand and usage frequency.
+* **Scenario Testing:** Executed 50 randomized stocking trials via automated macros to test the heuristic recommendation against unpredictable conditions, calculating revisit costs vs. net benefit per cubic foot.
+* **Resource Categorization:** Implemented an **ABC Analysis** framework to prioritize inventory, ensuring the highest ROI for limited storage capacity (500 cubic feet constraint).
 
-## Methodology
-The simulation and optimization process involved the following steps:
-1. **Data Profiling**: Analyzing historical sales and lead time data to identify underlying distributions.
-2. **Simulation Development**: Building a Monte Carlo simulation model in Excel to replicate various inventory scenarios.
-3. **Parameter Optimization**: Using OR models to calculate optimal inventory policies (e.g., s, S policy).
-4. **Sensitivity Analysis**: Testing the robustness of the recommended policies against shifts in market volatility.
-5. **Results Visualization**: Creating clear reporting structures to illustrate the trade-offs between service levels and total inventory costs.
+## 📊 Key Findings
+* **Risk Mitigation:** The heuristic model successfully absorbed historical demand shocks, producing a final recommendation with a minimum 55% accuracy baseline under extreme random conditions.
+* **Strategic Categorization:** Identified that Category A components (highest frequency) accounted for 52.64% of optimal inventory, providing a clear hierarchy for resource allocation.
+* **Actionable Thresholds:** Established a data-proven baseline to automatically stock any resource demonstrating an 80% frequency occurrence across simulation trials, covering 291 high-value assets.
+
+## 💡 Translation to Marketing & Business Strategy
+While applied to supply chain, the underlying mechanics of this project demonstrate advanced capabilities in **Budget & Resource Optimization**. The ability to use Monte Carlo simulations to predict demand, categorize assets by ROI (ABC Analysis), and mitigate risk under uncertainty translates directly to optimizing media planning budgets, forecasting marketing campaign performance, and allocating ad spend across dynamic channels.
